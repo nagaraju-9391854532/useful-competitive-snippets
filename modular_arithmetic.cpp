@@ -20,5 +20,6 @@ int mod_inv(int a,int m){
 //MODULO MULTIPLICATIVE INVERSE 
 //USING FERMAT'S LITTLE THEOREM
 int mod_div(int a,int b,int m){
+	//a and m should be coprime
 	return mod_mul(a,mod_inv(b,m),m);
 }
