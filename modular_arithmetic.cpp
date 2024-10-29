@@ -17,6 +17,8 @@ int mod_expo(int a,int b,int m){
 int mod_inv(int a,int m){
 	return mod_expo(a,m-2,m);
 }
+//MODULO MULTIPLICATIVE INVERSE 
+//USING FERMAT'S LITTLE THEOREM
 int mod_div(int a,int b,int m){
 	return mod_mul(a,mod_inv(b,m),m);
 }
