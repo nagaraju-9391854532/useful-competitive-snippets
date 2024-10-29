@@ -35,7 +35,7 @@ int fact[101];
 int ncr(int n, int r) {
     if (r < 0 || r > n) return 0;
     int denominator = mod_mul(fact[r], fact[n - r], m);
-    return mod_div(fact[n], denominator, m); // Corrected this line
+    return mod_div(fact[n], denominator, m); 
 }
 
 int main() {
