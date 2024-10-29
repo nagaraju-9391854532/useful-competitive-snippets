@@ -14,3 +14,9 @@ int mod_expo(int a,int b,int m){
 	if(b&1) res=mod_mul(res,a,m);
 	return res;
 }
+int mod_inv(int a,int m){
+	return mod_expo(a,m-2,m);
+}
+int mod_div(int a,int b,int m){
+	return mod_mul(a,mod_inv(b,m),m);
+}
